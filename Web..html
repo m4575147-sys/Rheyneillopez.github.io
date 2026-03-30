@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a3c34 50%, #0f2e25 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 60px 0;
+        }
+
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid #00ff88;
+            margin-bottom: 20px;
+            object-fit: cover;
+            box-shadow: 0 0 30px rgba(0, 255, 136, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-pic:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            font-size: 3.5em;
+            background: linear-gradient(45deg, #00ff88, #00cc6a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            font-size: 1.4em;
+            color: #a0a0a0;
+            margin-bottom: 40px;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .project-card {
+            background: rgba(0, 255, 136, 0.1);
+            border: 1px solid rgba(0, 255, 136, 0.3);
+            border-radius: 20px;
+            padding: 30px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            border-color: #00ff88;
+            box-shadow: 0 20px 40px rgba(0, 255, 136, 0.2);
+        }
+
+        .project-title {
+            font-size: 1.8em;
+            color: #00ff88;
+            margin-bottom: 15px;
+        }
+
+        .project-desc {
+            color: #b0b0b0;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .project-link {
+            display: inline-block;
+            background: linear-gradient(45deg, #00ff88, #00cc6a);
+            color: #000;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .project-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 255, 136, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5em; }
+            .profile-pic { width: 150px; height: 150px; }
+            .projects-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <!-- CHANGE YOUR PHOTO HERE -->
+            <img src="https://via.placeholder.com/200x200/1a3c34/00ff88?text=YOUR+PHOTO" alt="Profile Picture" class="profile-pic">
+            
+            <!-- CHANGE YOUR NAME HERE -->
+            <h1>Your Name</h1>
+            
+            <!-- CHANGE YOUR SUBTITLE HERE -->
+            <p class="subtitle">Web Developer | Designer | Creator</p>
+        </div>
+
+        <div class="projects-grid">
+            <!-- TASK/PROJECT 1 - Customize these -->
+            <div class="project-card">
+                <h3 class="project-title">Project 1</h3>
+                <p class="project-desc">Description of your first project. Add details about what you built and the technologies used.</p>
+                <a href="#" class="project-link" target="_blank">View Project</a>
+            </div>
+
+            <!-- TASK/PROJECT 2 - Customize these -->
+            <div class="project-card">
+                <h3 class="project-title">Project 2</h3>
+                <p class="project-desc">Description of your second project. This is fully customizable for any task or work.</p>
+                <a href="#" class="project-link" target="_blank">View Project</a>
+            </div>
+
+            <!-- TASK/PROJECT 3 - Customize these -->
+            <div class="project-card">
+                <h3 class="project-title">Project 3</h3>
+                <p class="project-desc">Add more projects as needed. Easy to duplicate and modify.</p>
+                <a href="#" class="project-link" target="_blank">View Project</a>
+            </div>
+
+            <!-- Add more project cards as needed -->
+        </div>
+    </div>
+</body>
+</html>
